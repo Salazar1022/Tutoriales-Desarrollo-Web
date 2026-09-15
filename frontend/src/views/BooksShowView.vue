@@ -18,7 +18,6 @@ function formatToCOP(price: number): string {
 
   return formatter.format(price).replace(/^\s*\$\s?/, '');
 }
-
 </script>
 
 <template>
@@ -31,7 +30,7 @@ function formatToCOP(price: number): string {
               <div>
                 <img
                   src="https://picsum.photos/seed/picsum/536/354"
-alt="Book Cover"
+                  alt="Book Cover"
                   class="object-cover rounded shadow-sm w-72 h-auto"
                 />
               </div>
@@ -68,7 +67,7 @@ alt="Book Cover"
                   <span class="text-gray-600">Price:</span>
                   <span class="font-medium">${{ formatToCOP(book.price) }} COP</span>
                 </div>
-<div class="flex justify-between">
+                <div class="flex justify-between">
                   <span class="text-gray-600">Stock:</span>
                   <span class="font-medium">
                     {{ book.stock }}
@@ -77,10 +76,9 @@ alt="Book Cover"
               </div>
             </div>
           </div>
-        <div class="bg-white rounded-lg shadow-md p-6 mt-8">
-                    <BookReviews :book-id="book.id" />
-                  </div>
-
+          <div class="bg-white rounded-lg shadow-md p-6 mt-8">
+            <BookReviews :book-id="book.id" />
+          </div>
         </div>
       </div>
     </div>

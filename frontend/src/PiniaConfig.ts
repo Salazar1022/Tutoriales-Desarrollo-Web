@@ -4,7 +4,7 @@ import { bookSeeder } from '@/stores/bookseeder.js';
 import { reviewSeeder } from '@/stores/reviewseeder.js';
 
 export default class PiniaConfig {
-public static init() {
+  public static init() {
     const pinia = createPinia();
 
     const savedState = localStorage.getItem('piniaState');

@@ -37,7 +37,7 @@ import { RouterLink, RouterView } from 'vue-router';
             </RouterLink>
           </nav>
         </div>
-<div class="w-full p-6 border-t border-gray-700 mt-auto">
+        <div class="w-full p-6 border-t border-gray-700 mt-auto">
           <div class="flex items-center">
             <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-3">
               <i class="fas fa-user text-white"></i>
@@ -72,7 +72,7 @@ import { RouterLink, RouterView } from 'vue-router';
                 <i class="fas fa-user text-white"></i>
               </div>
             </div>
-</div>
+          </div>
         </header>
 
         <!-- main content -->

@@ -48,7 +48,7 @@ function formatDate(iso?: string): string {
       <h4 class="text-sm font-medium text-gray-700 mb-3">Add a review</h4>
       <form @submit.prevent="submitReview" class="space-y-3">
         <div>
-<label for="rating" class="block text-sm text-gray-600 mb-1">Rating</label>
+          <label for="rating" class="block text-sm text-gray-600 mb-1">Rating</label>
           <select
             id="rating"
             v-model.number="form.rating"
@@ -82,7 +82,7 @@ function formatDate(iso?: string): string {
         <button
           type="submit"
           :disabled="isSubmitting || !form.comment.trim()"
-class="bg-blue-600 text-white font-medium py-2 px-4 rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+          class="bg-blue-600 text-white font-medium py-2 px-4 rounded hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
         >
           Post review
         </button>
